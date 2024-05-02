@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #4056F4;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0; /* Adjust padding */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding */
+}
+
+.logo {
+    font-weight: 500;
+    color: #EEF0F2;
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    margin-top: 5px;
+}
+
+.menu a {
+    color: #EEF0F2;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center;
+    padding: 18px 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    background: #EEF0F2;
+    color: #4056F4;
+}
+
+.menu a:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #EEF0F2;
+    margin: 5px 0;
+}
+
+/* Home */
+.home {
+    position: relative;
+    width: 100%;
+    height: 590px; /* Adjust height */
+    overflow: hidden;
+}
+
+.bghome {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bghome img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logobesar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #EEF0F2;
+}
+
+.logobesar img {
+    width: 325px;
+    height: 325px;
+}
+
+.logobesar h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.logobesar h3 {
+    font-size: 15px;
+    font-style: italic;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.analyst {
+    width: 100%;
+    height: 500px;
+    background-color: #EEF0F2;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analyst-content {
+    text-align: center;
+    
+    transform: translate(-30%, -150%);
+}
+
+.glossary {
+    width: 100%;
+    height: 500px;
+    background-color: #0080ff;
+    margin-top: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.glossary-content {
+    text-align: justify;
+    
+    transform: translate(30%, -150%);
+}
+
+.about {
+    width: 100%;
+    height: 500px;
+    background-color: #EEF0F2;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    text-align: center;
+    
+    transform: translate(-30%, -150%);
+}
+
+.contact {
+    width: 100%;
+    height: 275px;
+    background-color: #2F2E30;
+    margin-top: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.contact-content {
+    text-align: justify;
+    transform: translate(30%, -45%);
+    color: #EEF0F2;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        margin-right: 20px; /* Add margin to separate from logo */
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust top position */
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .menu.active a {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .menu a {
+        font-size: 12px; /* Atur ukuran font yang lebih kecil */
+        padding: 15px 10px; /* Atur padding yang lebih kecil */
+    }
+
+    .logo {
+        font-size: 1.2rem; /* Atur ukuran font logo yang lebih kecil */
+        margin-left: 20px; /* Sesuaikan margin logo */
+    }
+
+    .hamburger-menu {
+        margin-right: 10px; /* Sesuaikan margin hamburger menu */
+    }
+}
+
