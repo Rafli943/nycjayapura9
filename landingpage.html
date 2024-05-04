@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYC Jayapura 9 Team</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
     
     
 </head>
 <body>
     <div class="container">
-
+        <!-- Header Navbar -->
         <header class="header">
             <nav class="navbar">
                 <h2 class="logo">NYC | Jayapura 9 Team</h2>
@@ -29,6 +30,7 @@
             </nav>
         </header>
         
+        <!-- Home Section -->
         <div class="home" id="home">
             <div class="bghome">
                 <img src="./assets/bghome.png" width="1440" height="600" />
@@ -40,6 +42,7 @@
             </div>
         </div>   
         
+        <!-- Analyst Section -->
         <div class="analyst" id="analyst">
             <div class="analyst-content">
                 <!-- Isi konten di dalam "analyst" -->
@@ -48,32 +51,79 @@
             </div>
         </div>
 
+        <!-- Glossary Section -->
         <div class="glossary" id="glossary">
             <div class="glossary-content">
-                <!-- Isi konten di dalam "analyst" -->
+                <!-- Isi konten di dalam "glossary" -->
                 <h2>Glossary</h2>
-                <p>Content for the analyst section goes here...</p>
+                <p>Content for the glossary section goes here...</p>
             </div>
         </div>
 
+        <!-- About Section -->
         <div class="about" id="about">
             <div class="about-content">
-                <!-- Isi konten di dalam "analyst" -->
+                <!-- Isi konten di dalam "about" -->
                 <h2>About Us</h2>
                 <p>Content for the analyst section goes here...</p>
             </div>
         </div>
 
+        <!-- Contact Section -->
         <div class="contact" id="contact">
             <div class="contact-content">
-                <!-- Isi konten di dalam "analyst" -->
                 <h2>Contact Us</h2>
-                <p>Content for the analyst section goes here...</p>
+                <p>Feel free to reach out to us using the details below</p>
+            </div>
+
+            <div class="containercontact">
+                <div class="contactinfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone Number</h3>
+                            <p>012345678910  Data Lead</p>
+                            <p>012345678911  Software Lead</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-at" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                        <h3>Email</h3>
+                        <p>team9.jayapura@gmail.com</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contactform">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputbox">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 
             
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -9,20 +9,22 @@ body {
     font-family: sans-serif;
 }
 
+/* Navbar Style Start */
+
 .header {
     position: fixed;
     width: 100%;
     background-color: #4056F4;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 0; /* Adjust padding */
+    padding: 10px 0; 
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Adjust padding */
+    padding: 0 20px; 
 }
 
 .logo {
@@ -56,7 +58,9 @@ body {
     margin-right: 30px;
 }
 
-/* Hamburger menu */
+/* Navbar Style End */
+
+/* Hamburger menu start */
 .hamburger-menu {
     display: none;
 }
@@ -68,12 +72,14 @@ body {
     margin: 5px 0;
 }
 
-/* Home */
+/* Humburger menu Style End */
+
+/* Home Style Start */
 .home {
     position: relative;
     width: 100%;
-    height: 590px; /* Adjust height */
-    overflow: hidden;
+    height: 590px; /
+    
 }
 
 .bghome {
@@ -114,6 +120,8 @@ body {
     max-width: 80%;
     margin: 0 auto;
 }
+
+/* Home Style End */
 
 .analyst {
     width: 100%;
@@ -163,21 +171,150 @@ body {
     transform: translate(-30%, -150%);
 }
 
+/* Contact Style Start */
 .contact {
     width: 100%;
-    height: 275px;
+    height: 650px;
     background-color: #2F2E30;
     margin-top: 0px;
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .contact-content {
-    text-align: justify;
-    transform: translate(30%, -45%);
+    text-align: center;
     color: #EEF0F2;
+    margin-top: 50px;
 }
+
+.contact .contact-content h2{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: antiquewhite;
+}
+
+.containercontact{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.containercontact .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containercontact .contactinfo .box{
+    position: relative;
+    padding: 20px;
+    display: flex;
+}
+
+.containercontact .contactinfo .box .icon {
+    min-width: 40px;
+    height: 40px;
+    background: #EEF0F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.containercontact .contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #EEF0F2;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.containercontact .contactinfo .box .text h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: antiquewhite;
+}
+
+.contactform {
+    width: 40%;
+    padding: 40px;
+    margin-top: 20px;
+    background: rgb(196, 181, 160);
+    border-radius: 2%;
+}
+
+.contactform h2 {
+    font-size: 25px;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #333; /* Warna garis bawah */
+    text-decoration-style: solid; /* Gaya garis bawah (misalnya: solid, dashed, dotted) */
+    text-decoration-thickness: 2px; /* Ketebalan garis bawah (dalam CSS3) */
+}
+
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    background: rgb(196, 181, 160);
+}
+
+.contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5x;
+    color: #666;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span {
+    color: antiquewhite;
+    font-size: 13px;
+    font-weight: 200;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"] {
+    width: 100px;
+    background: antiquewhite;
+    color: #2F2E30;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Contact Style End */
 
 @media screen and (max-width: 768px) {
     .menu {
@@ -187,14 +324,14 @@ body {
     .hamburger-menu {
         display: block;
         cursor: pointer;
-        margin-right: 20px; /* Add margin to separate from logo */
+        margin-right: 20px; 
     }
 
     .menu.active {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Adjust top position */
+        top: 60px; 
         left: 0;
         background-color: #333;
         width: 100%;
@@ -203,21 +340,54 @@ body {
     .menu.active a {
         margin: 10px 0;
     }
+
+    .contact {
+        padding: 50px;
+        margin-left: -50px;
+    }
+
+    .contact-content {
+        text-align: center;
+    }
+
+    .containercontact {
+        flex-direction: column;
+    }
+
+    .containercontact .contactinfo {
+        margin-bottom: 40px;
+    }
+
+    .containercontact .contactinfo,
+    .contactform {
+        width: 100%;
+    }
+
+    .contactform {
+        width: 70%; /* Misalnya, dapat disesuaikan sesuai kebutuhan */
+        padding: 20px; /* Misalnya, dapat disesuaikan sesuai kebutuhan */
+        margin-top: 20px; /* Misalnya, dapat disesuaikan sesuai kebutuhan */
+        margin-right: 0; /* Menghilangkan margin kanan */
+        margin-left: 0; /* Menghilangkan margin kiri */
+        background: rgb(196, 181, 160);
+        border-radius: 2%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .menu a {
-        font-size: 12px; /* Atur ukuran font yang lebih kecil */
-        padding: 15px 10px; /* Atur padding yang lebih kecil */
+        font-size: 12px; 
+        padding: 15px 10px; 
     }
 
     .logo {
-        font-size: 1.2rem; /* Atur ukuran font logo yang lebih kecil */
-        margin-left: 20px; /* Sesuaikan margin logo */
+        font-size: 1.2rem; 
+        margin-left: 20px; 
     }
 
     .hamburger-menu {
-        margin-right: 10px; /* Sesuaikan margin hamburger menu */
+        margin-right: 10px;
     }
 }
+
 
