@@ -40,3 +40,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+let text = document.getElementById('text');
+let awankiri = document.getElementById('awankiri');
+let awankanan = document.getElementById('awankanan');
+let kotakiri = document.getElementById('kotakiri');
+let kotakanan = document.getElementById('kotakanan');
+
+window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+
+    text.style.marginTop = value * 1.2 + 'px';
+    awankiri.style.top = value * -1.5 + 'px';
+    awankiri.style.left = value * -2.5 + 'px';
+    awankanan.style.top = value * -1.5 + 'px';
+    awankanan.style.left = value * 2.5 + 'px';
+    kotakiri.style.left = value * -2.5 + 'px';
+    kotakanan.style.left = value * 2.5 + 'px';
+});
