@@ -59,3 +59,4 @@ window.addEventListener('scroll', () => {
     kotakiri.style.left = value * -2.5 + 'px';
     kotakanan.style.left = value * 2.5 + 'px';
 });
+
